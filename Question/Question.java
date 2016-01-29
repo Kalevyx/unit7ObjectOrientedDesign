@@ -50,4 +50,12 @@ public class Question
    {
       System.out.println(text);
    }
+   
+   /**
+    * Adds text to question's text.
+    * @param questionText the text to add to this question
+    */
+   public void addText(String questionText){
+       text+=questionText;
+    }
 }
