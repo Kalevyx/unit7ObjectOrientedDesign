@@ -6,6 +6,6 @@ public class CardHierarchy{
         
     public String getName(){return name;}
         
-    public boolean isExppired(){return false;}
+    public boolean isExpired(){return false;}
         
     public String format(){return "Card holder: "+name;}}
