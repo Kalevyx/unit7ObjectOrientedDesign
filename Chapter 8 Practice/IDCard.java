@@ -12,4 +12,5 @@ public class IDCard extends CardHierarchy{
             //are equal
             boolean isEqual = super.equals(otherIDCard);
             //check if instance variables of this object and other object are equal
-            return isEqual&&this.idNumber.equals(otherIDCard.idNumber);}}}
+            return isEqual&&this.idNumber.equals(otherIDCard.idNumber);}
+        return false;}}

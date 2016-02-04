@@ -16,6 +16,4 @@ public class Billfold extends CardHierarchy{
         else if(card2!=null){
             str+=card2.format();}
         return str;}
-    public static void main(String[]args){
-        Billfold billfold = new Billfold();
-        billfold.addCard(new CardHierarchy(J));}}
+    public static void main(String[]args){}}
