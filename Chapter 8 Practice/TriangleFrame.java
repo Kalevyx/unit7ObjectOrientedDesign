@@ -8,7 +8,7 @@ public class TriangleFrame extends JFrame{
     
     private TriangleComponent triangle;
     
-    class MousePressListener implements MouseListener{
+    /*class MousePressListener implements MouseListener{
         public void mousePressed(MouseEvent event){
             int x = event.getX();
             int y = event.getY();
@@ -19,13 +19,16 @@ public class TriangleFrame extends JFrame{
         public void mouseClicked(MouseEvent event){}
         public void mouseEntered(MouseEvent event){}
         public void mouseExited(MouseEvent event){}
-    }
+    }*/
     
     public TriangleFrame(){
         triangle = new TriangleComponent();
-        add(triangle);
+        this.add(triangle);
         
-        MouseListener listener = new MousePressListener();
+        //MouseListener listener = new MousePressListener();
         triangle.addMouseListener(listener);
         
-        setSize(FRAME_WIDTH,FRAME_HEIGHT);}}
+        setSize(FRAME_WIDTH,FRAME_HEIGHT);
+        this.setTitle("Triangle");
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setVisible(true);}}
