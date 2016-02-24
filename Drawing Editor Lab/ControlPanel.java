@@ -5,25 +5,26 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class ControlPanel extends JPanel{
-    private JPanel panel;
     private JButton colorButton;
     private JButton circleButton;
     private JButton squareButton;
     private JLabel label;
+    private JPanel panel;
     
-    public ControlPanel(DrawingEditor controls){
-        this.panel = new JPanel();
-        
+    public ControlPanel(DrawingPanel canvas){
         this.colorButton = new JButton("Pick Color");
-        this.panel.add(colorButton);
-        //this.panel.add();
+        add(colorButton);
+        panel = new JPanel();
+        add(panel);
         this.circleButton = new JButton("Add Circle");
-        this.panel.add(circleButton);
+        add(circleButton);
         this.squareButton = new JButton("Add Square");
-        this.panel.add(squareButton);
+        add(squareButton);
         
-        /*this.label = new JLabel();
-        this.panel.add(this.label);*/}
+        ClickListener listener = new ClickListener();
+        this.colorButton.addActionListener(listener);
+        this.circleButton.addActionListener(listener);
+        this.squareButton.addActionListener(listener);}
         
     public class ClickListener implements ActionListener{
         public void actionPerformed(ActionEvent event){
