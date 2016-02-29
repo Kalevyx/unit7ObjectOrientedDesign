@@ -17,6 +17,6 @@ public class DrawingEditor extends JFrame{
         setTitle("Drawing Editor");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);}
-        
+
     public static void main(String[]args){
         DrawingEditor viewer = new DrawingEditor();}}
