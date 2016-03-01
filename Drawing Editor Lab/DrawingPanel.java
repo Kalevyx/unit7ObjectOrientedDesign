@@ -13,15 +13,18 @@ import java.awt.event.MouseEvent;
 
 public class DrawingPanel extends JComponent{
     ArrayList<Shape> shapes;
+    private Color currentColor;
     public DrawingPanel(){
         shapes = new ArrayList<Shape>();
-        setBackground(Color.white);}
+        setBackground(Color.WHITE);
+        currentColor = Color.BLUE;}
     
     public Color getColor(){return getBackground();}
     
     //public Dimension getPreferredSize(){}
     
-    public void pickColor(){}
+    public void pickColor(){
+        currentColor = JColorChooser.showDialog(this, "Choose a color", currentColor);}
     
     public void addCircle(){}
     
@@ -39,4 +42,3 @@ public class DrawingPanel extends JComponent{
         public void mouseClicked(MouseEvent event){}
         public void mouseEntered(MouseEvent event){}
         public void mouseExited(MouseEvent event){}}}
-        
