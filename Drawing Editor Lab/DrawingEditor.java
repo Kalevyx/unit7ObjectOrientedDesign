@@ -10,6 +10,7 @@ public class DrawingEditor extends JFrame{
     private ControlPanel controls;
     
     public DrawingEditor(){
+        canvas = new DrawingPanel();
         controls = new ControlPanel(canvas);
         add(controls, BorderLayout.PAGE_END);
         

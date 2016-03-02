@@ -19,7 +19,7 @@ public class DrawingPanel extends JComponent{
         setBackground(Color.WHITE);
         currentColor = Color.BLUE;}
     
-    public Color getColor(){return getBackground();}
+    public Color getColor(){return currentColor;}
     
     //public Dimension getPreferredSize(){}
     

@@ -8,4 +8,3 @@ public class Square extends Shape{
     
     public void draw(Graphics2D g2){
         g2.setColor(Color.BLUE);}}
-        //one more method

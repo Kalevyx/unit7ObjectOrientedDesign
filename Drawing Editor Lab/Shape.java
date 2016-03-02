@@ -19,10 +19,8 @@ public abstract class Shape{
     
     public void move(double x, double y){}
     
-    public void setRadius(double r){}
+    public void setRadius(double r){radius = r;}
     
     public abstract boolean isInside(Point2D.Double point);
-    
-    //public boolean isOnBorder(Point2D.Double point){return false;}
     
     public abstract void draw(Graphics2D g2, boolean filled);}
